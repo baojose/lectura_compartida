@@ -140,6 +140,17 @@ header p:nth-child(3){
 	height:395px;
 	width:256px;
 	margin:50px 0 0 147px;
+	float:left;
+	display:block;
+}
+
+#book_content{
+	height:395px;
+	width:256px;
+	margin:50px 0 0 0;
+	padding:0 0 0 0;
+	float:left;
+	display:block;
 }
 
 .ws_prev{
@@ -162,6 +173,53 @@ header p:nth-child(3){
 	-o-transform:rotate(180deg);
 	-moz-transform:rotate(180deg);
 }
+
+#book_content p:nth-child(1){
+	font-family:'adobegaramondproregularRg', Georgia, "Times New Roman", Times, serif;
+	color:#626262;
+	font-size:23px;
+	padding:70px 0 0 0;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+#book_content p:nth-child(2){
+	font-family:'adobe_garamond_proitalic', Georgia, "Times New Roman", Times, serif;
+	color:#000;
+	font-size:23px;
+	padding:5px 0 0 0;
+}
+
+#book_content p:nth-child(3){
+	font-family:'adobegaramondproregularRg', Georgia, "Times New Roman", Times, serif;
+	color:#626262;
+	font-size:14px;
+	padding:30px 0 0 0;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+	line-height:18px;
+}
+
+#book_content a{
+    background-color: rgba(0, 0, 0, 0);
+    border: 3px solid #626262;
+    color: #626262;
+    display: inline-block;
+    margin: 20px 0 10px;
+    padding: 13px 22px;
+    text-decoration: none;
+    transition: all 0.25s ease 0s;
+	font-family:'adobegaramondproregularRg', Georgia, "Times New Roman", Times, serif;
+	text-transform: uppercase;
+	font-size:14px;
+}
+
+#book_content a:hover{
+    background-color: #000;
+    border: 3px solid #000;
+    color: #FFFFFF;
+}
+
+
+
 
 
 
