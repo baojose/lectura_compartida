@@ -135,3 +135,33 @@ header p:nth-child(3){
 	height:100%;
 	
 }
+
+#book_g{
+	height:395px;
+	width:256px;
+	margin:50px 0 0 147px;
+}
+
+.ws_prev{
+	background: url(../img/arrow.png) no-repeat;
+    height: 43px;
+	width:43px;
+	margin:100px 0 0 38px;
+    position: absolute;
+}
+
+.ws_next{
+	background: url(../img/arrow.png) no-repeat;
+    height: 43px;
+	width:43px;
+	margin:100px 0 0 692px;
+    position: absolute;
+	transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+}
+
+
+
