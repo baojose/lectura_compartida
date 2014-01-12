@@ -164,6 +164,7 @@ header p:nth-child(3){
 	width:43px;
 	margin:150px 0 0 29px;
     position: absolute;
+	transition: all 0.25s ease 0s;
 }
 
 .ws_next{
@@ -172,11 +173,20 @@ header p:nth-child(3){
 	width:43px;
 	margin:150px 0 0 710px;
     position: absolute;
+	transition: all 0.25s ease 0s;
 	transform:rotate(180deg);
 	-ms-transform:rotate(180deg);
 	-webkit-transform:rotate(180deg);
 	-o-transform:rotate(180deg);
 	-moz-transform:rotate(180deg);
+}
+
+.ws_next, .ws_prev{
+	cursor:pointer;
+}
+
+.ws_next:hover, .ws_prev:hover{
+	opacity:0.6;
 }
 
 #book_content p:nth-child(1){
