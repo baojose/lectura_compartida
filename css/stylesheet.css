@@ -88,7 +88,7 @@ table {
 	margin:0 auto;
 	width:810px;
 	background: url(../img/noise.png);
-	height:1400px;
+	height:1600px;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
@@ -130,7 +130,8 @@ header p:nth-child(3){
 	height:1px;
 	background-color:#626262;
 	float:right;
-	margin:90px 10px 0 0;
+	margin:30px 10px 0 0;
+	opacity:0.7;
 }
 
 
@@ -163,6 +164,7 @@ header p:nth-child(3){
 	width:43px;
 	margin:150px 0 0 29px;
     position: absolute;
+	transition: all 0.25s ease 0s;
 }
 
 .ws_next{
@@ -171,11 +173,20 @@ header p:nth-child(3){
 	width:43px;
 	margin:150px 0 0 710px;
     position: absolute;
+	transition: all 0.25s ease 0s;
 	transform:rotate(180deg);
 	-ms-transform:rotate(180deg);
 	-webkit-transform:rotate(180deg);
 	-o-transform:rotate(180deg);
 	-moz-transform:rotate(180deg);
+}
+
+.ws_next, .ws_prev{
+	cursor:pointer;
+}
+
+.ws_next:hover, .ws_prev:hover{
+	opacity:0.6;
 }
 
 #book_content p:nth-child(1){
@@ -220,6 +231,7 @@ header p:nth-child(3){
 	font-size:14px;
 }
 
+
 .button:hover{
     background-color: #000;
     border: 3px solid #000;
@@ -227,6 +239,70 @@ header p:nth-child(3){
 }
 
 .button:active{
+}
+
+.button_box1{
+	background-color: rgba(0, 0, 0, 0);
+    border: 3px solid #FFF;
+    color: #FFF;
+	float:left;
+    display: inline-block;
+    margin: 10px 0 0 10px;
+    padding: 8.5px 16px;
+    text-decoration: none;
+    transition: all 0.25s ease 0s;
+	font-family:'adobegaramondproregularRg', Georgia, "Times New Roman", Times, serif;
+	text-transform: uppercase;
+	font-size:14px;
+}
+
+.button_box1:hover{
+    background-color: #FFF;
+    border: 3px solid #FFF;
+    color: #000;
+}
+
+.button_box2{
+	background-color: rgba(0, 0, 0, 0);
+    border: 3px solid #FFF;
+    color: #FFF;
+	float:left;
+    display: inline-block;
+    margin: 10px 0 0 70px;
+    padding: 8.5px 16px;
+    text-decoration: none;
+    transition: all 0.25s ease 0s;
+	font-family:'adobegaramondproregularRg', Georgia, "Times New Roman", Times, serif;
+	text-transform: uppercase;
+	font-size:14px;
+}
+
+.button_box2:hover{
+    background-color: #FFF;
+    border: 3px solid #FFF;
+    color: #000;
+}
+
+.button_box3{
+	background-color: rgba(0, 0, 0, 0);
+    border: 3px solid #FFF;
+    color: #FFF;
+	float:left;
+    display: inline-block;
+    margin: 10px 10px 0 0;
+	float:right;
+    padding: 8.5px 16px;
+    text-decoration: none;
+    transition: all 0.25s ease 0s;
+	font-family:'adobegaramondproregularRg', Georgia, "Times New Roman", Times, serif;
+	text-transform: uppercase;
+	font-size:14px;
+}
+
+.button_box3:hover{
+    background-color: #FFF;
+    border: 3px solid #FFF;
+    color: #000;
 }
 
 #book_content img{
@@ -243,7 +319,7 @@ header p:nth-child(3){
 	width:735px;
 	height:25px;
 	background:url(../img/shelf.png) no-repeat;
-	margin: 50px 10px 0 0;
+	margin: 50px 10px 60px 0;
 	float:right;
 	display:block; 
 }
@@ -291,21 +367,85 @@ header p:nth-child(3){
 /* BOXES */
 
 #boxes_container{
-	width:730px;
+	width:750px;
 	display:block;
 	float:right;
-	margin:40px 24px 0 0;
-	background-color:#CCC;
+	margin:40px 15px 0 0;
 }
 
-.box{
+.box_1{
 	height:183px;
-	width:232px;
+	width:237px;
+	margin: 9px  6px;
 	display:block;
 	float:left;
-	margin: 5px 0 5px 5px;
-	background-color:#FFF;
+	background-color:#4a4a4a;
 }
+
+.box_2{
+	height:183px;
+	width:237px;
+	margin: 9px  6px;
+	display:block;
+	float:left;
+	background-color:#757575;
+}
+
+.box_3{
+	height:183px;
+	width:237px;
+	margin: 9px  6px;
+	display:block;
+	float:left;
+	background-color:#4a4a4a;
+}
+
+.box_1 img, .box_2 img, .box_3 img{
+	margin-top:-9px;
+}
+
+.box_1 img{
+	margin-left:7px;
+}
+
+.box_2 img{
+	margin-left:42px;
+}
+
+.box_3 img{
+	margin-left:80px;
+}
+
+#boxes_container .box_1 p{
+	font-family:'adobegaramondproregularRg', Georgia, "Times New Roman", Times, serif;
+	color:#ffffff;
+	font-size:12px;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+	padding:10px;
+}
+
+#boxes_container .box_2 p{
+	font-family:'adobe_garamond_proitalic', Georgia, "Times New Roman", Times, serif;
+	color:#ffffff;
+	font-size:12px;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+	padding:10px;
+	text-align:center;
+}
+
+#boxes_container .box_3 p{
+	font-family:'adobegaramondproregularRg', Georgia, "Times New Roman", Times, serif;
+	color:#ffffff;
+	font-size:12px;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+	padding:10px;
+	text-align:right;
+}
+
+
+
+
+
 
 
 
