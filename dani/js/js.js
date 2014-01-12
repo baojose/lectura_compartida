@@ -25,7 +25,7 @@ $(document).ready(function() {
 // carga los datos de slider_content correspondientes al id recibido leidos del json 
 function cargarDatosPrincipales(id){
   console.log("cargarDatosPrincipales libro=["+id+"]");
-  $('#path_foto').html('<img src="'+libros[id].path_foto+'">');
+  $('#path_img').html('<img src="'+libros[id].path_img+'">');
   $('#titulo').html(libros[id].titulo);
   $('#descripcion').html(libros[id].descripcion);
   $('#link_ebook').html('<a href="'+libros[id].link_ebook+'">link_ebook</a>');

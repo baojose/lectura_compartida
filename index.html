@@ -6,6 +6,11 @@
 
 <link rel="stylesheet" href="css/stylesheet.css" type="text/css" />
 
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> --> 
+<script src="js/jquery.1.10.2.js"></script> <!-- copia local por si se trabaja sin conexion, quitar en produccion SED -->
+<script src="js/json.js"></script>
+<script src="js/js.js"></script>
+
 </head>
 
 <body>
@@ -33,13 +38,14 @@
     	<div class="slider_content">
             
             <div id="book_g">
+				<div id="path_img" width="256" height="395"></div>
             	<img src="img/book1.png" width="256" height="395" />
             </div>
             
           	<div id="book_content">
-            	<p>El Francotirador Paciente</p>
+            	<p id="titulo"></p>
                 <p>Arturo Pérez-Reverte</p>
-                <p>La ciudad es un campo de batalla. Un artista callejero lanza desafíos como si fueran bombas. El único arte posible es un ajuste de cuentas.</p>
+                <p id="descripcion"></p>
                 
               <a href="#submit" style=""><img src="img/button.jpg" width="107" height="37" alt="Cómpralo para eBook" /></a>
               
