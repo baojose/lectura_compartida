@@ -6,15 +6,23 @@
 
 <link rel="stylesheet" href="css/stylesheet.css" type="text/css" />
 
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> --> 
+<script src="js/jquery.1.10.2.js"></script> <!-- copia local por si se trabaja sin conexion, quitar en produccion SED -->
+<script src="js/js.js"></script>
+
 </head>
 
 <body>
+    <div class="change_libros_peq"><!--Libros pequeños que hacen de Menu-->
 
+        <img id="libro1" src="img/arturo_perez_reverte_el_francotirador_pacientep.jpg" width="40" height="31" />
+        <img id="libro2" src="img/juil_dyler_la_unidad_nilog_al_sima_hongo_ajunjenp.jpg" width="40" height="31" />
+    </div><!--End de "Libros pequeños que hacen de Menu"-->
 <div id="wrapper">
-sdfgsfgsfdg
+
     <!--Header-->
     <header>    
-    	<img src="img/logo.png" width="101" height="119" alt="Club de Lectura Alfaguara Logo" />
+        <img src="img/logo.png" width="101" height="119" alt="Club de Lectura Alfaguara Logo" />
         
         <p>Club de Lectura Alfaguara</p>        
         <p>Lorem Ipsum Dolor Proin XXXXXXXXXXXXXXXXXXX</p>
@@ -24,13 +32,16 @@ sdfgsfgsfdg
     <!--Slider-->
     <div id="slider">
     
-    	<div class="slider_content">
-   	    	<img src="img/book1.png" width="256" height="395" /> 
+        <div class="slider_content">
+            <img src="img/book1.png" width="256" height="395" /> 
+            <div id="titulo"></div>
+            <div id="descripcion"></div>
+            <div id="link_ebook"></div>
+            <div id="link_comprar"></div>
         </div>    
     
     </div><!--End Header-->
 
 </div>
-dani al final
 </body>
 </html>
