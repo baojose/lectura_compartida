@@ -10,7 +10,15 @@
 <!--Tooltip-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.0.min.js"></script>
 <script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
-
+	
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.tooltip').tooltipster({
+				theme: 'tooltipster-punk'
+		});
+	});
+</script>
+    
 <!--Tooltip CSS-->
 <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
 
@@ -90,13 +98,13 @@
         <!--Shelf--> 
         <div id="shelf">
         	<ul>
-                <li><img id="libro1" src="img/book1.png" width="84" height="102" /></li>
-            	<li><img id="libro2" src="img/book2.png" width="84" height="102" /></li>
-                <li><img id="libro3" src="img/book3.png" width="84" height="102" /></li>
-                <li><a href="#"><img src="img/book4.png" width="84" height="102" /></a></li>
-                <li><a href="#"><img src="img/book5.png" width="84" height="102" /></a></li>
-                <li><a href="#"><img src="img/book6.png" width="84" height="102" /></a></li>
-                <li><a href="#"><img src="img/book7.png" width="84" height="102" /></a></li>
+                <li class="tooltip" title="Prueba Tooltip"><img id="libro1" src="img/book1.png" width="84" height="102" /></li>
+            	<li class="tooltip" title="Prueba Tooltip"><img id="libro2" src="img/book2.png" width="84" height="102" /></li>
+                <li class="tooltip" title="Prueba Tooltip, Prueba Tooltip, Prueba Tooltip"><img id="libro3" src="img/book3.png" width="84" height="102" /></li>
+                <li class="tooltip" title="Prueba Tooltip"><a href="#"><img src="img/book4.png" width="84" height="102" /></a></li>
+                <li class="tooltip" title="Prueba Tooltip"><a href="#"><img src="img/book5.png" width="84" height="102" /></a></li>
+                <li class="tooltip" title="Prueba Tooltip"><a href="#"><img src="img/book6.png" width="84" height="102" /></a></li>
+                <li class="tooltip" title="Prueba Tooltip"><a href="#"><img src="img/book7.png" width="84" height="102" /></a></li>
             </ul>         	
         </div><!--End Shelf-->
         <!--Bar-->
@@ -158,6 +166,20 @@
         <div id="bar"></div><!--Bar ending-->                 
   
   </div><!--End Boxes-->
+  
+  <!--Footer-->
+  <div id="footer">
+  
+  		<div id="icons">
+        	<ul>
+            	<li><a href="#"><img src="img/facebook.png" width="38" height="38" /></a></li>
+                <li><a href="#"><img src="img/twitter.png" width="38" height="38" /></a></li>
+                <li><a href="#"><img src="img/spotify.png" width="38" height="38" /></a></li>
+                <li><a href="#"><img src="img/mail.png" width="38" height="38" /></a></li>
+            </ul>
+        </div>
+          
+  </div><!--End Footer-->
 
 </div><!--End Wrapper-->
 

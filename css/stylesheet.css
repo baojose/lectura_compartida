@@ -88,7 +88,7 @@ table {
 	margin:0 auto;
 	width:810px;
 	background: url(../img/noise.png);
-	height:1600px;
+	height:1547px;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
@@ -187,6 +187,10 @@ header p:nth-child(3){
 
 .ws_next:hover, .ws_prev:hover{
 	opacity:0.6;
+}
+
+.ws_next:active, .ws_prev:active{
+	border:1px solid transparent;
 }
 
 #book_content p:nth-child(1){
@@ -319,11 +323,10 @@ header p:nth-child(3){
 	width:735px;
 	height:25px;
 	background:url(../img/shelf.png) no-repeat;
-	margin: 50px 10px 60px 0;
+	margin: 50px 10px 40px 0;
 	float:right;
 	display:block; 
 }
-
 
 #shelf ul{
 	width:735px;
@@ -339,6 +342,7 @@ header p:nth-child(3){
 	width:84px;
 	display:block;
 	transition: all 0.25s ease 0s;
+	cursor:pointer;
 }
 
 #shelf ul li:hover{
@@ -441,6 +445,42 @@ header p:nth-child(3){
 	padding:10px;
 	text-align:right;
 }
+
+
+/* FOOTER */
+
+#footer{
+	width:782px;
+	height:74px;
+	float:left;
+	margin:50px 0 0 0;
+	background: url(../img/logo_p.png)  no-repeat 25px 25px, #000;
+}
+
+#footer #icons{
+	width:198px;
+	height:46px;
+	float:right;
+	margin:15px 5px 0 0;
+}
+
+#footer #icons li{
+	width:38px;
+	height:38px;
+	float:left;
+	padding:3px;
+	opacity:0.5;
+	transition: all 0.25s ease 0s;
+}
+
+#footer #icons li:hover{
+	opacity:1;
+}
+
+#footer #icons li:active{
+	margin:1px 1px;
+}
+
 
 
 
