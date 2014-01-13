@@ -446,6 +446,36 @@ header p:nth-child(3){
 	text-align:right;
 }
 
+.catalog{
+	height:115px;
+	width:218px;
+	display:block;
+	float:right;
+	margin:20px -3px 0 0;
+}
+
+.catalog ul li{
+	height:49px;
+	width:49px;
+	display:block;
+	float:left;
+	padding:2px;
+}
+
+.catalog ul li img{
+	margin:0 0 0 -7px;
+	transition: all 0.25s ease 0s;
+}
+
+.catalog ul li img:hover{
+	border: 1px solid #FFF;
+	opacity:0.6;
+}
+
+.catalog ul li img:active{
+	border:1px solid transparent;
+}
+
 
 /* FOOTER */
 
@@ -480,16 +510,3 @@ header p:nth-child(3){
 #footer #icons li:active{
 	margin:1px 1px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
