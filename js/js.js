@@ -6,7 +6,7 @@ $(document).ready(function() {
   // TODO borrar el contenido de todas las variables json. Sino el anterior valor sobreescribe un valor vacio
   
   // Detectar cual libro pequeño ha sido clicado, cambiar el contenido de slider_content
-  $(".change_libros_peq img").click(function() {
+  $("#shelf img").click(function() {
     // fade out slider_content
     $(".slider_content").fadeOut();    
     

@@ -14,6 +14,11 @@
 <!--Tooltip CSS-->
 <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
 
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> --> 
+<!--  <script src="js/jquery.1.10.2.js"></script> copia local por si se trabaja sin conexion, quitar en produccion SED -->
+<script src="js/json.js"></script>
+<script src="js/js.js"></script>
+
 </head>
 
 <body>
@@ -51,7 +56,7 @@
         
         <p>Club de Lectura Alfaguara</p>        
         <p>Lorem Ipsum Dolor Proin</p>
-            
+    
     </header><!--End Header-->
     
     <!--Slider-->
@@ -65,15 +70,16 @@
     	<div class="slider_content">
             
             <div id="book_g">
-            	<img src="img/book1.png" width="256" height="395" />
+				<div id="path_img" width="256" height="395"></div>
+            	<!-- <img src="img/book1.png" width="256" height="395" /> -->
             </div>
             
           	<div id="book_content">
-            	<p>El Francotirador Paciente</p>
+            	<p id="titulo"></p>
                 <p>Arturo Pérez-Reverte</p>
-                <p>La ciudad es un campo de batalla. Un artista callejero lanza desafíos como si fueran bombas. El único arte posible es un ajuste de cuentas.</p>
+                <p id="descripcion"></p>
                 
-              <a href="#submit" style=""><img src="img/button.jpg" width="107" height="37" alt="Cómpralo para eBook" /></a>
+              <a href="#" style=""><img src="img/button.jpg" width="107" height="37" alt="Cómpralo para eBook" /></a>
               
               <a class="button" href="#submit" style="">Comprar</a>
                 
@@ -84,8 +90,8 @@
         <!--Shelf--> 
         <div id="shelf">
         	<ul>
-            	<li><a href="#"><img src="img/book2.png" width="84" height="102" /></a></li>
-                <li><a href="#"><img src="img/book2.png" width="84" height="102" /></a></li>
+            	<li><img id="libro1" src="img/book2.png" width="84" height="102" /></li>
+                <li><img id="libro2" src="img/book2.png" width="84" height="102" /></li>
                 <li><a href="#"><img src="img/book2.png" width="84" height="102" /></a></li>
                 <li><a href="#"><img src="img/book2.png" width="84" height="102" /></a></li>
                 <li><a href="#"><img src="img/book2.png" width="84" height="102" /></a></li>
@@ -94,13 +100,20 @@
             </ul>         	
         </div><!--End Shelf-->
         
+    <div class="change_libros_peq"><!--Libros pequeños que hacen de Menu-->
+
+        <img id="libro1" src="img/arturo_perez_reverte_el_francotirador_pacientep.jpg" width="40" height="31" />
+        <img id="libro2" src="img/juil_dyler_la_unidad_nilog_al_sima_hongo_ajunjenp.jpg" width="40" height="31" />
+    </div><!--End de "Libros pequeños que hacen de Menu"-->
+
+
         <!--Bar-->
         <div id="bar"></div><!--Bar ending-->     
     
   </div><!--End Slider-->
 	  
   <!--Boxes-->
-  <div id="boxes_container">  
+  <div id="boxes_container">
   
         <div class="box_1">
         	<img src="img/lap1.png" width="151" height="31" />
@@ -151,7 +164,7 @@
         
         <!--Bar-->
         <div id="bar"></div><!--Bar ending-->                 
- 
+  
   </div><!--End Boxes-->
 
 </div><!--End Wrapper-->
