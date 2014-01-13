@@ -3,7 +3,7 @@ $(document).ready(function() {
   
   // Parsear json.js
   
-  alert(libros);
+//  alert(libros);
   // var json_obj = jQuery.parseJSON(libros);
   // console.log(json_obj);
   // var lista_libros = dummy_listaOrdenadaLibros(json_obj);
