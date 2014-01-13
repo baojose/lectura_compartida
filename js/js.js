@@ -15,16 +15,21 @@ $(document).ready(function() {
   // http://stackoverflow.com/questions/5248721/jquery-replacewith-fade-animate
   // http://stackoverflow.com/questions/10627049/jquery-fadein-change-content-and-fadeout-with-opacity
 
-    // fade out slider_content
-    $(".slider_content").fadeOut();    
-    
     // detectar cual id ha sido clicado
     var id = $(this).attr('id');
-    cargarDatosPrincipales(id);
 
-    // fade in slider_content
-    $(".slider_content").fadeIn();    
+    if (actual_libro != id){  // clicando algo ya clicado
+      //console.log("repitiendo");
+
+      actual_libro = id;
+      // fade out slider_content
+      $(".slider_content").fadeOut();    
+      cargarDatosPrincipales(id);
+
+      // fade in slider_content
+      $(".slider_content").fadeIn();    
     
+    }
     console.log("El Libro del shelf clicado tiene ID=["+id+"]");
   });
 });
