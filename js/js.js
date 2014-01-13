@@ -34,7 +34,8 @@ function cargarDatosPrincipales(id){
   $('#titulo').html(libros[id].titulo);
   $('#autor').html(libros[id].autor);
   $('#descripcion').html(libros[id].descripcion);
-  $('#link_ebook').html('<a href="'+libros[id].link_ebook+'">link_ebook</a>');
+  
+  $('#link_ebook').html('<a href="'+libros[id].link_ebook+'"><img src="img/button.jpg" width="107" height="37" alt="Cómpralo para eBook" /></a>');
   $('#link_comprar').html('<a href="'+libros[id].link_comprar+'">link_comprar</a>');
 
 }
