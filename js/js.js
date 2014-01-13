@@ -1,11 +1,14 @@
 $(document).ready(function() {
-  // cargar la imagen landing
-  cargarDatosPrincipales('libro1');
+  // console.log("jquery funcionando");
 
-  console.log("jquery funcionando");
+  var libro_landing = 'libro1'; // se podria hacer una funcion q lo buscase del json.js
+  // cargar la imagen landing
+  cargarDatosPrincipales(libro_landing);
+  var actual_libro = libro_landing;
+
   // TODO borrar el contenido de todas las variables json. Sino el anterior valor sobreescribe un valor vacio
   
-  // Detectar cual libro pequeño ha sido clicado, cambiar el contenido de slider_content
+  // Detectar cual libro del shelf ha sido clicado, cambiar el contenido de slider_content
   $("#shelf img").click(function() {
   // TODO arreglar fade in y fade out para que no se muestre el libro cliclado antes del fade in
   // links: 
@@ -22,7 +25,7 @@ $(document).ready(function() {
     // fade in slider_content
     $(".slider_content").fadeIn();    
     
-    console.log("dentro de Libro pequeño clicado has clickado ID=["+id+"]");
+    console.log("El Libro del shelf clicado tiene ID=["+id+"]");
   });
 });
 
@@ -34,9 +37,12 @@ function cargarDatosPrincipales(id){
   $('#titulo').html(libros[id].titulo);
   $('#autor').html(libros[id].autor);
   $('#descripcion').html(libros[id].descripcion);
-  
   $('#link_ebook').html('<a href="'+libros[id].link_ebook+'"><img src="img/button.jpg" width="107" height="37" alt="Cómpralo para eBook" /></a>');
-  $('#link_comprar').html('<a href="'+libros[id].link_comprar+'">link_comprar</a>');
+  $('#link_comprar').html('<a class="button" href="'+libros[id].link_comprar+'">Comprar</a>');
 
 }
 
+// FUNCIONES TODO
+// Necesarias para las flechas del slider_content
+// numeroTotalLibros
+// listaOrdenadaLibros

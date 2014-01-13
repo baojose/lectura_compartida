@@ -44,8 +44,8 @@ var libros=
     "autor" : "Arturo Pé3333333",
     "titulo": "Nisi exercitation repr",
     "descripcion": "3333S Lorem ipsum Nisi exercitation reprehenderit consequat.Lorem ipsum Nisi exercitation reprehenderit consequat.Lorem ipsum Nisi exercitation reprehenderit consequat.",
-    "link_ebook": "http://link_ebook_libro2.com",
-    "link_comprar": "http://link_comprar_libro2.com",
+    "link_ebook": "http://link_ebook_libro3.com",
+    "link_comprar": "http://link_comprar_libro3.com",
     "path_img": "img/book3g.png",
     "array": [
       "valor1",
