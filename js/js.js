@@ -98,22 +98,27 @@ function cargarDatosPrincipales(id){
       // fade out slider_content       // hacerlo dentro provoca que la primera carga tb tenga efecto fade
       $(".slider_content").fadeOut();
 
-
-  $('#path_img').html('<img src="'+libros[id].path_img+'">');
-  $('#titulo').html(libros[id].titulo);
-  $('#autor').html(libros[id].autor);
-  $('#descripcion').html(libros[id].descripcion);
-  $('#link_ebook').html('<a href="'+libros[id].link_ebook+'"><img src="img/button.jpg" width="107" height="37" alt="Cómpralo para eBook" /></a>');
-  $('#link_comprar').html('<a class="button" href="'+libros[id].link_comprar+'">Comprar</a>');
-
+      $('.slider_content').fadeOut("slow", function(){
+        $('#path_img').html('<img src="'+libros[id].path_img+'">');
+        $('#titulo').html(libros[id].titulo);
+        $('#autor').html(libros[id].autor);
+        $('#descripcion').html(libros[id].descripcion);
+        $('#link_ebook').html('<a href="'+libros[id].link_ebook+'"><img src="img/button.jpg" width="107" height="37" alt="Cómpralo para eBook" /></a>');
+        $('#link_comprar').html('<a class="button" href="'+libros[id].link_comprar+'">Comprar</a>');
+        
       // fade in slider_content
       $(".slider_content").fadeIn();
+          // var div = $("<div id='foo'>test2</div>").hide();
+          // $(this).replaceWith(div);
+          // $('#foo').fadeIn("slow");
+      });
+
+
+
+
 }
 
-// FUNCIONES TODO
 // Necesarias para las flechas del slider_content
-// numeroTotalLibros
-// listaOrdenadaLibros
 function dummy_siguinteLibro(){
   nuevo_libro="";
   // es ultimo libro?
@@ -147,7 +152,9 @@ function dummy_anteriorLibro(){
   // sumar 1 a posicion actual
   return (nuevo_libro);
 }
-function dummy_listaOrdenadaLibros(){
+// listaOrdenadaLibros 
+// queria que se cargase dinamicamente, en vez de eso usa listaOrdenadaLibros
+function dummy_listaOrdenadaLibros(){  // no se usa
   for (var i in libros)
       {
         console.log("i"+i);
