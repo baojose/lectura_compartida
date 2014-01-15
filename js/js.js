@@ -12,6 +12,7 @@ $(document).ready(function() {
   //////////////
   // Tooltip  //
   //////////////
+  // antes estaba en index
   // $(document).ready(function() {
     $('.tooltip').tooltipster({
         theme: 'tooltipster-punk'
