@@ -4,7 +4,7 @@ var libros=
     "publicado":"si",
     "autor" : "Arturo Pérez-Reverte",
     "titulo": "El Francotirador Paciente",
-    "descripcion": "La ciudad dddd es un campo de batalla. Un artista callejero lanza desafíos como si fueran bombas. El único arte posible es un ajuste de cuentas.",
+    "descripcion": "La ciudad dddd es un campo de batalla. Un artista callejero lanza desafíos como si fueran bombas. El único arte posible es un ajuste de cuentas.La ciudad dddd es un campo de batalla. Un artista callejero lanza desafíos como si fueran bombas. El único arte posible es un ajuste de cuentas.La ciudad dddd es un campo de batalla. Un artista callejero lanza desafíos como si fueran bombas. El único arte posible es un ajuste de cuentas.",
     "link_ebook": "http://link_ebook_libro1.com",
     "link_comprar": "http://link_comprar_libro1.com",
     "path_img": "img/book1g.png",

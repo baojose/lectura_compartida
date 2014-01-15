@@ -24,6 +24,9 @@
 <script src="js/json.js"></script>
 <script src="js/js.js"></script>
 
+<!--Accordion-->
+<script src="js/accordion/modernizr.js"></script>
+
 </head>
 
 <body>
@@ -59,8 +62,22 @@
     <header>    
     	<img src="img/logo.png" width="101" height="119" alt="Club de Lectura Alfaguara Logo" />
         
-        <p>Club de Lectura Alfaguara</p>        
-        <p>Lorem Ipsum Dolor Proin</p>
+        <p>Club de Lectura Alfaguara</p> 
+        
+        <!--Acoordion-->        
+        <div id="content">
+        
+        <div class="qaccordion">
+          <h3 class="qHead">Un espacio para lectura de las mejores novelas</h3>
+          <div>
+            <p>Te invitamos a que participes en nuestro Club de Lectura Alfaguara a través de Facebook y comentes con nosotros algunas de las novelas que publicaremos en 2014.</p> 
+
+            <p>Cada mes se propondrá un nuevo libro, pero puedes consultar en cualquier momento los post de los libros que ya no estén activos. Además de participar en el club que desees, puedes acceder a los contenidos extra de cada título.</p>
+            
+            <p>Esperamos que disfrutes de esta experiencia de lectura.</p>
+          </div>
+          
+        </div><!--End Acoordion--> 
     
     </header><!--End Header-->
     
@@ -122,7 +139,7 @@
         
 		<div class="box_2">
         	<img src="img/lap2.png" width="151" height="31" />
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>   
+            <p>«Abrir las puertas para salir a jugar» es lo que propone este álbum-almanaque que constituye una nueva aproximación al escritor y al hombre. Un libro que es a su manera muchos libros y que puede leerse sobre todo de dos modos: en la forma corriente (de la A a la Z) o de manera salteada, siguiendo la espiral de la curiosidad y del AZar.</p>   
             
            	<a class="button_box2" href="#submit" style="">Ver más</a>
                
@@ -194,6 +211,9 @@
 <script type="text/javascript">
       FB.Canvas.setAutoResize( 100 );
 </script><!--End Facebook Size resizer-->
+
+<!--Accordion .js-->
+<script src="js/accordion/index.js"></script>
 
 </body>
 </html>
