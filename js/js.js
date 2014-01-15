@@ -1,3 +1,10 @@
+// tamaño de libros shelf
+var shelf_tamanyo_widht         = 84;
+var shelf_tamanyo_height        = 102;
+var shelf_tamanyo_widht_grande  = 100;
+var shelf_tamanyo_height_grande = 140;
+
+
 var libro_landing = 'libro1'; // se podria hacer una funcion q lo buscase del json.js
 var actual_libro = libro_landing;
 var listaOrdenadaLibros = new Array("libro1","libro2","libro3");
@@ -5,6 +12,11 @@ var listaOrdenadaLibros = new Array("libro1","libro2","libro3");
 var listaOrdenadaLibros_ultimo = listaOrdenadaLibros[listaOrdenadaLibros.length-1];
 // nombre primer libro
 var listaOrdenadaLibros_primero = listaOrdenadaLibros[0];
+
+
+
+
+
 
 $(document).ready(function() {
   // console.log("jquery funcionando");
@@ -35,7 +47,7 @@ $(document).ready(function() {
 
     if (actual_libro != id){  // clicando algo ya clicado
       //console.log("repitiendo");
-
+      decrementarImagen(actual_libro);
       actual_libro = id;
 
       cargarDatosPrincipales(id);
@@ -91,13 +103,11 @@ $(document).ready(function() {
 function cargarDatosPrincipales(id){
   console.log("cargarDatosPrincipales id recibida=["+id+"]");
 
- // TODO arreglar fade in y fade out para que no se muestre el libro cliclado antes del fade in
-  // links:
-  // http://stackoverflow.com/questions/5248721/jquery-replacewith-fade-animate
-  // http://stackoverflow.com/questions/10627049/jquery-fadein-change-content-and-fadeout-with-opacity
+      // fade out slider_content       // cambiar el contenido (y fade in) dentro de la funcion fadeOut consigue que se haga todo en orden correcto
 
-      // fade out slider_content       // hacerlo dentro provoca que la primera carga tb tenga efecto fade
-      $(".slider_content").fadeOut();
+      // $(".slider_content").fadeOut();
+      decrementarImagen(actual_libro);
+      incrementarImagen(id);
 
       $('.slider_content').fadeOut("slow", function(){
         $('#path_img').html('<img src="'+libros[id].path_img+'">');
@@ -106,18 +116,26 @@ function cargarDatosPrincipales(id){
         $('#descripcion').html(libros[id].descripcion);
         $('#link_ebook').html('<a href="'+libros[id].link_ebook+'"><img src="img/button.jpg" width="107" height="37" alt="Cómpralo para eBook" /></a>');
         $('#link_comprar').html('<a class="button" href="'+libros[id].link_comprar+'">Comprar</a>');
-        
+
       // fade in slider_content
       $(".slider_content").fadeIn();
           // var div = $("<div id='foo'>test2</div>").hide();
           // $(this).replaceWith(div);
           // $('#foo').fadeIn("slow");
-      });
-
-
-
-
+  });
 }
+
+//incrementar tamaño de id
+function incrementarImagen(id){
+  $("#"+id).animate({ height: shelf_tamanyo_height_grande, width: shelf_tamanyo_widht_grande }, 300);
+  // $("#"+id).css( "z-index" , "100" );
+}
+//tamaño de imagen a tamaño original
+function decrementarImagen(id){
+  $("#"+id).animate({ height: shelf_tamanyo_height, width: shelf_tamanyo_widht }, 150);
+  // $("#"+id).css( "z-index" , "100" );
+}
+
 
 // Necesarias para las flechas del slider_content
 function dummy_siguinteLibro(){
@@ -128,12 +146,13 @@ function dummy_siguinteLibro(){
   }
   else{ // no lo es
     actual_index = listaOrdenadaLibros.indexOf(actual_libro);
+    // sumar 1 a posicion actual
     actual_index = actual_index +1;
     nuevo_libro = listaOrdenadaLibros[actual_index];
 
   }
+  decrementarImagen(actual_libro);
   actual_libro = nuevo_libro;
-  // sumar 1 a posicion actual
   return (nuevo_libro);
 }
 
@@ -145,15 +164,16 @@ function dummy_anteriorLibro(){
   }
   else{ // no lo es
     actual_index = listaOrdenadaLibros.indexOf(actual_libro);
+    // restar 1 a posicion actual
     actual_index = actual_index -1;
     nuevo_libro = listaOrdenadaLibros[actual_index];
 
   }
+  decrementarImagen(actual_libro);
   actual_libro = nuevo_libro;
-  // sumar 1 a posicion actual
   return (nuevo_libro);
 }
-// listaOrdenadaLibros 
+// listaOrdenadaLibros
 // queria que se cargase dinamicamente, en vez de eso usa listaOrdenadaLibros
 function dummy_listaOrdenadaLibros(){  // no se usa
   for (var i in libros)
