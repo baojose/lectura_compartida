@@ -1,8 +1,10 @@
 var libro_landing = 'libro1'; // se podria hacer una funcion q lo buscase del json.js
 var actual_libro = libro_landing;
-var listaOrdenadaLibros = new Array();
-listaOrdenadaLibros = ("libro1","libro2","libro3");
-
+var listaOrdenadaLibros = new Array("libro1","libro2","libro3");
+// nombre ultimo libro
+var listaOrdenadaLibros_ultimo = listaOrdenadaLibros[listaOrdenadaLibros.length-1];
+// nombre primer libro
+var listaOrdenadaLibros_primero = listaOrdenadaLibros[0];
 
 $(document).ready(function() {
   // console.log("jquery funcionando");
@@ -61,7 +63,7 @@ $(document).ready(function() {
 
     // Para ver por consola valor del actual_libro al clicar cualquier parte d la pagina
     $("html").click(function(){
-      console.log("debug 1d12d2r actual_libro  ["+actual_libro+"]");
+      console.log("debug 1d12d2r actual_libro  ["+actual_libro+"] listaOrdenadaLibros_ultimo ["+listaOrdenadaLibros_ultimo+"] listaOrdenadaLibros_primero ["+listaOrdenadaLibros_primero+"]");
 
     });
     ///////////////////////////// PARSEAR json.js
@@ -72,10 +74,10 @@ $(document).ready(function() {
     // var lista_libros = dummy_listaOrdenadaLibros(json_obj);
      // $.getJSON
 
-    jQuery.each(libros, function() {
-      console.log("My id is " + this + ".");
-      return (this != "four"); // will stop running to skip "five"
-    });
+    // jQuery.each(libros, function() {
+    //   console.log("My id is " + this + ".");
+    //   return (this != "four"); // will stop running to skip "five"
+    // });
 });
 
 ///////////////////////////////////////
@@ -113,14 +115,37 @@ function cargarDatosPrincipales(id){
 // numeroTotalLibros
 // listaOrdenadaLibros
 function dummy_siguinteLibro(){
-  console.log("DUMMY actual_libro = "+actual_libro);
+  nuevo_libro="";
+  // es ultimo libro?
+  if(actual_libro == listaOrdenadaLibros_ultimo){
+    nuevo_libro = listaOrdenadaLibros_primero;
+  }
+  else{ // no lo es
+    actual_index = listaOrdenadaLibros.indexOf(actual_libro);
+    actual_index = actual_index +1;
+    nuevo_libro = listaOrdenadaLibros[actual_index];
 
-  return ("libro2");
+  }
+  actual_libro = nuevo_libro;
+  // sumar 1 a posicion actual
+  return (nuevo_libro);
 }
-function dummy_anteriorLibro(){
-  console.log("DUMMY actual_libro = "+actual_libro);
 
-  return ("libro1");
+function dummy_anteriorLibro(){
+  nuevo_libro="";
+  // es ultimo libro?
+  if(actual_libro == listaOrdenadaLibros_primero){
+    nuevo_libro = listaOrdenadaLibros_ultimo;
+  }
+  else{ // no lo es
+    actual_index = listaOrdenadaLibros.indexOf(actual_libro);
+    actual_index = actual_index -1;
+    nuevo_libro = listaOrdenadaLibros[actual_index];
+
+  }
+  actual_libro = nuevo_libro;
+  // sumar 1 a posicion actual
+  return (nuevo_libro);
 }
 function dummy_listaOrdenadaLibros(){
   for (var i in libros)
