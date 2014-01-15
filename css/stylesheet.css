@@ -30,6 +30,8 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -52,6 +54,19 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
 }
 
 
@@ -88,11 +103,11 @@ table {
 	margin:0 auto;
 	width:810px;
 	background: url(../img/noise.png);
-	height:1547px;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
 	border:14px solid grey;
+	float:left;
 }
 
 header{
@@ -113,18 +128,6 @@ header p{
 	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
 }
 
-header p:nth-child(3){
-	margin:0 auto;
-	width:730px;
-	text-align:center;
-	font-family:'adobegaramondproregularRg', Georgia, "Times New Roman", Times, serif;
-	color:#626262;
-	font-size:29px;
-	padding:10px 0 0 0;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
-	background:url(../img/bar2.png) no-repeat 0 65%;
-}
-
 #bar{
 	width:730px;
 	height:1px;
@@ -139,6 +142,7 @@ header p:nth-child(3){
 
 #wrapper #slider{
 	width:770px;
+	float:left;
 }
 
 #book_g{
@@ -509,4 +513,69 @@ header p:nth-child(3){
 
 #footer #icons li:active{
 	margin:1px 1px;
+}
+
+
+/* ACCORDION */
+
+.qaccordion, .qtoggle {
+  margin: 10px auto;
+}
+
+.h {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+  
+.h a {
+  margin:0 auto;
+  width:730px;
+  text-align:center;
+  font-family:'adobegaramondproregularRg', Georgia, "Times New Roman", Times, serif;
+  color:#626262;
+  font-size:29px;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  background:url(../img/bar2.png) no-repeat 0 50%;
+  transition: all 0.25s ease 0s;  
+}
+
+.h a:hover{
+	opacity:0.6;
+}
+
+.h a:after {
+  content: "+";
+  font-size: 25px;
+  position: absolute;
+  margin: 0px 0 0 -530px;
+}
+
+.h.open {
+  border-bottom: none;
+}
+
+.h.open:after {
+  content: "-";
+}
+.h:last-child a {
+}
+
+.outer {	
+  background: url(../img/noise.png);
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.qaccordion div p{
+	width:510px;
+	margin:0 auto;
+	text-align:left;
+	font-family:'adobe_garamond_proitalic', Georgia, "Times New Roman", Times, serif;
+	color:#626262;
+	font-size:14px;
+	line-height:18px;
+	padding:10px 0 0 0;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
 }
