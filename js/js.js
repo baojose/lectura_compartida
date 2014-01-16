@@ -120,7 +120,17 @@ function cargarDatosPrincipales(id){
         ///////////
         // CAJAS //
         ///////////
-          $('#caja_azul').html(libros[id].cajas[0]);
+        // Posiciones en json => X en numero cajas[X]
+        //no consigo sacar los datos del json
+          // $('#caja_azul').html(libros[id].cajas[0]);
+          // $('#caja_azul').html(libros[id].cajas[0].texto);
+          $('#caja_roja').html(libros[id].cajas[0].caja_roja.texto);
+          $('#caja_azul').html(libros[id].cajas[1].caja_azul.texto);
+          $('#caja_lima').html(libros[id].cajas[2].caja_lima.texto);
+          $('#caja_rosa').html(libros[id].cajas[3].caja_rosa.texto);
+          $('#caja_verde').html(libros[id].cajas[4].caja_verde.texto);
+          // $('#caja_azul').html(libros[id].cajas[5].caja_azul.texto);   // seria la del lightbox
+          
           // $('#caja_naranja').html('<div class="catalog"><ul><li><a href="img/materiales/thumb1_1024.jpg" class="html5lightbox" title="Prueba Thumbnail" data-group="set1"><img src="img/materiales/thumb1.jpg" width="48" height="49" /></a></li><li><a href="img/materiales/thumb2_1024.jpg" class="html5lightbox" title="Prueba Thumbnail" data-group="set1"><img src="img/materiales/thumb2.jpg" width="48" height="49" /></a></li><li><a href="img/materiales/thumb1_1024.jpg" class="html5lightbox" title="Prueba Thumbnail" data-group="set1"><img src="img/materiales/thumb1.jpg" width="48" height="49" /></a></li><li><a href="img/materiales/thumb1_1024.jpg" class="html5lightbox" title="Prueba Thumbnail" data-group="set1"><img src="img/materiales/thumb1.jpg" width="48" height="49" /></a></li><li><a href="img/materiales/thumb1_1024.jpg" class="html5lightbox" title="Prueba Thumbnail" data-group="set1"><img src="img/materiales/thumb1.jpg" width="48" height="49" /></a></li><li><a href="img/materiales/thumb1_1024.jpg" class="html5lightbox" title="Prueba Thumbnail" data-group="set1"><img src="img/materiales/thumb1.jpg" width="48" height="49" /></a></li><li><a href="img/materiales/thumb1_1024.jpg" class="html5lightbox" title="Prueba Thumbnail" data-group="set1"><img src="img/materiales/thumb1.jpg" width="48" height="49" /></a></li><li><a href="img/materiales/thumb1_1024.jpg" class="html5lightbox" title="Prueba Thumbnail" data-group="set1"><img src="img/materiales/thumb1.jpg" width="48" height="49" /></a></li></ul></div>');
 
 

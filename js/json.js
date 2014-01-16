@@ -12,8 +12,8 @@ var libros=
       {"caja_roja":{"texto":"«Abrir 1111 las puertas para salir a jugar» es lo que propone este álbum-almanaque que constituye una nueva aproximación al escritor y al hombre. Un libro que es a su manera muchos libros y que puede leerse sobre todo de dos modos: en la forma corriente (de la A a la Z) o de manera salteada, siguiendo la espiral de la curiosidad y del AZar.", "link_ver_mas":"http://link_linkver_mas_libro11.com"}},
       {"caja_azul":{"texto":"«Abrir  2222 las puertas para salir a jugar» es lo que propone este álbum-almanaque que constituye una nueva aproximación al escritor y al hombre. Un libro que es a su manera muchos libros y que puede leerse sobre todo de dos modos: en la forma corriente (de la A a la Z) o de manera salteada, siguiendo la espiral de la curiosidad y del AZar.", "link_ver_mas":"http://link_linkver_mas_libro1.com2f4g2"}},
       {"caja_lima":{"texto":"3333s3ñakfsdñ", "link_ver_mas":"toe"}},
-      {"caja_rosa":{"texto":"3333s3ñakfsdñ", "link_ver_mas":"toe"}},
-      {"caja_verde":{"texto":"3333s3ñakfsdñ", "link_ver_mas":"toe"}},
+      {"caja_rosa":{"texto":"ROSA3ñakfsdñ", "link_ver_mas":"toe"}},
+      {"caja_verde":{"texto":"VERDEf2f2f", "link_ver_mas":"toe"}},
       {"caja_naranja":{"texto":"3333s3ñakfsdñ", "link_ver_mas":"toe"}},
       {"videos":{"text":"4444sñakfsdñ", "link_ver_mas":"toe"}}
 
@@ -34,6 +34,17 @@ var libros=
     "link_ebook": "http://link_ebook_libro2.com",
     "link_comprar": "http://link_comprar_libro2.com",
     "path_img": "img/book2g.png",
+    "cajas":[
+      {"caja_roja":{"texto":"«Abrir 1111 las puertas para salir a jugar» es lo que propone este álbum-almanaque que constituye una nueva aproximación al escritor y al hombre. Un libro que es a su manera muchos libros y que puede leerse sobre todo de dos modos: en la forma corriente (de la A a la Z) o de manera salteada, siguiendo la espiral de la curiosidad y del AZar.", "link_ver_mas":"http://link_linkver_mas_libro11.com"}},
+      {"caja_azul":{"texto":"«Abrir  2222 las puertas para salir a jugar» es lo que propone este álbum-almanaque que constituye una nueva aproximación al escritor y al hombre. Un libro que es a su manera muchos libros y que puede leerse sobre todo de dos modos: en la forma corriente (de la A a la Z) o de manera salteada, siguiendo la espiral de la curiosidad y del AZar.", "link_ver_mas":"http://link_linkver_mas_libro1.com2f4g2"}},
+      {"caja_lima":{"texto":"3333s3ñakfsdñ", "link_ver_mas":"toe"}},
+      {"caja_rosa":{"texto":"ROSA3ñakfsdñ", "link_ver_mas":"toe"}},
+      {"caja_verde":{"texto":"VERDEf2f2f", "link_ver_mas":"toe"}},
+      {"caja_naranja":{"texto":"3333s3ñakfsdñ", "link_ver_mas":"toe"}},
+      {"videos":{"text":"4444sñakfsdñ", "link_ver_mas":"toe"}}
+
+    ],
+
     "array": [
       "valor1",
       "valor2",
