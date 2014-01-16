@@ -119,21 +119,18 @@ function cargarDatosPrincipales(id){
         
         ///////////
         // CAJAS //
-        ///////////
+        ///////////     
         // Posiciones en json => X en numero cajas[X]
-        //no consigo sacar los datos del json
-          // $('#caja_azul').html(libros[id].cajas[0]);
-          // $('#caja_azul').html(libros[id].cajas[0].texto);
-          $('#caja_roja').html(libros[id].cajas[0].caja_roja.texto);
-          $('#caja_azul').html(libros[id].cajas[1].caja_azul.texto);
-          $('#caja_lima').html(libros[id].cajas[2].caja_lima.texto);
-          $('#caja_rosa').html(libros[id].cajas[3].caja_rosa.texto);
-          $('#caja_verde').html(libros[id].cajas[4].caja_verde.texto);
+          $('#caja_roja').html(libros[id].cajas[0].caja_roja.texto+'<a class="button_box1" href="'+libros[id].cajas[0].caja_roja.link_ver_mas+'" style="">Ver más</a>');
+          $('#caja_azul').html(libros[id].cajas[1].caja_azul.texto+'<a class="button_box2" href="'+libros[id].cajas[1].caja_azul.link_ver_mas+'" style="">Ver más</a>');
+          $('#caja_lima').html(libros[id].cajas[2].caja_lima.texto+'<a class="button_box3" href="'+libros[id].cajas[2].caja_lima.link_ver_mas+'" style="">Ver más</a>');
+          $('#caja_rosa').html(libros[id].cajas[3].caja_rosa.texto+'<a class="button_box1" href="'+libros[id].cajas[3].caja_rosa.link_ver_mas+'" style="">Ver más</a>');
+          $('#caja_verde').html(libros[id].cajas[4].caja_verde.texto+'<a class="button_box2" href="'+libros[id].cajas[4].caja_verde.link_ver_mas+'" style="">Ver más</a>');
           // $('#caja_azul').html(libros[id].cajas[5].caja_azul.texto);   // seria la del lightbox
           
           // $('#caja_naranja').html('<div class="catalog"><ul><li><a href="img/materiales/thumb1_1024.jpg" class="html5lightbox" title="Prueba Thumbnail" data-group="set1"><img src="img/materiales/thumb1.jpg" width="48" height="49" /></a></li><li><a href="img/materiales/thumb2_1024.jpg" class="html5lightbox" title="Prueba Thumbnail" data-group="set1"><img src="img/materiales/thumb2.jpg" width="48" height="49" /></a></li><li><a href="img/materiales/thumb1_1024.jpg" class="html5lightbox" title="Prueba Thumbnail" data-group="set1"><img src="img/materiales/thumb1.jpg" width="48" height="49" /></a></li><li><a href="img/materiales/thumb1_1024.jpg" class="html5lightbox" title="Prueba Thumbnail" data-group="set1"><img src="img/materiales/thumb1.jpg" width="48" height="49" /></a></li><li><a href="img/materiales/thumb1_1024.jpg" class="html5lightbox" title="Prueba Thumbnail" data-group="set1"><img src="img/materiales/thumb1.jpg" width="48" height="49" /></a></li><li><a href="img/materiales/thumb1_1024.jpg" class="html5lightbox" title="Prueba Thumbnail" data-group="set1"><img src="img/materiales/thumb1.jpg" width="48" height="49" /></a></li><li><a href="img/materiales/thumb1_1024.jpg" class="html5lightbox" title="Prueba Thumbnail" data-group="set1"><img src="img/materiales/thumb1.jpg" width="48" height="49" /></a></li><li><a href="img/materiales/thumb1_1024.jpg" class="html5lightbox" title="Prueba Thumbnail" data-group="set1"><img src="img/materiales/thumb1.jpg" width="48" height="49" /></a></li></ul></div>');
 
-
+ 
       // fade in slider_content
       $(".slider_content").fadeIn();
           // var div = $("<div id='foo'>test2</div>").hide();
