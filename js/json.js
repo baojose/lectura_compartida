@@ -9,10 +9,13 @@ var libros=
     "link_comprar": "http://link_comprar_libro1.com",
     "path_img": "img/book1g.png",
     "cajas":[
-      {"sobre_el_autor":{"text":"1111sñakfsdñ", "path_img":"toe"}},
-      {"sabias_que":{"text":"2222sasñakfsdñ", "path_img":"toe"}},
-      {"playlist":{"text":"3333s3ñakfsdñ", "path_img":"toe"}},
-      {"videos":{"text":"4444sñakfsdñ", "path_img":"toe"}}
+      {"caja_roja":{"texto":"«Abrir 1111 las puertas para salir a jugar» es lo que propone este álbum-almanaque que constituye una nueva aproximación al escritor y al hombre. Un libro que es a su manera muchos libros y que puede leerse sobre todo de dos modos: en la forma corriente (de la A a la Z) o de manera salteada, siguiendo la espiral de la curiosidad y del AZar.", "link_ver_mas":"http://link_linkver_mas_libro11.com"}},
+      {"caja_azul":{"texto":"«Abrir  2222 las puertas para salir a jugar» es lo que propone este álbum-almanaque que constituye una nueva aproximación al escritor y al hombre. Un libro que es a su manera muchos libros y que puede leerse sobre todo de dos modos: en la forma corriente (de la A a la Z) o de manera salteada, siguiendo la espiral de la curiosidad y del AZar.", "link_ver_mas":"http://link_linkver_mas_libro1.com2f4g2"}},
+      {"caja_lima":{"texto":"3333s3ñakfsdñ", "link_ver_mas":"toe"}},
+      {"caja_rosa":{"texto":"3333s3ñakfsdñ", "link_ver_mas":"toe"}},
+      {"caja_verde":{"texto":"3333s3ñakfsdñ", "link_ver_mas":"toe"}},
+      {"caja_naranja":{"texto":"3333s3ñakfsdñ", "link_ver_mas":"toe"}},
+      {"videos":{"text":"4444sñakfsdñ", "link_ver_mas":"toe"}}
 
     ],
     "array": [

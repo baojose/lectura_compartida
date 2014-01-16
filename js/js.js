@@ -116,6 +116,13 @@ function cargarDatosPrincipales(id){
         $('#descripcion').html(libros[id].descripcion);
         $('#link_ebook').html('<a href="'+libros[id].link_ebook+'"><img src="img/button.jpg" width="107" height="37" alt="Cómpralo para eBook" /></a>');
         $('#link_comprar').html('<a class="button" href="'+libros[id].link_comprar+'">Comprar</a>');
+        
+        ///////////
+        // CAJAS //
+        ///////////
+          $('#caja_azul').html(libros[id].cajas[0]);
+          // $('#caja_naranja').html('<div class="catalog"><ul><li><a href="img/materiales/thumb1_1024.jpg" class="html5lightbox" title="Prueba Thumbnail" data-group="set1"><img src="img/materiales/thumb1.jpg" width="48" height="49" /></a></li><li><a href="img/materiales/thumb2_1024.jpg" class="html5lightbox" title="Prueba Thumbnail" data-group="set1"><img src="img/materiales/thumb2.jpg" width="48" height="49" /></a></li><li><a href="img/materiales/thumb1_1024.jpg" class="html5lightbox" title="Prueba Thumbnail" data-group="set1"><img src="img/materiales/thumb1.jpg" width="48" height="49" /></a></li><li><a href="img/materiales/thumb1_1024.jpg" class="html5lightbox" title="Prueba Thumbnail" data-group="set1"><img src="img/materiales/thumb1.jpg" width="48" height="49" /></a></li><li><a href="img/materiales/thumb1_1024.jpg" class="html5lightbox" title="Prueba Thumbnail" data-group="set1"><img src="img/materiales/thumb1.jpg" width="48" height="49" /></a></li><li><a href="img/materiales/thumb1_1024.jpg" class="html5lightbox" title="Prueba Thumbnail" data-group="set1"><img src="img/materiales/thumb1.jpg" width="48" height="49" /></a></li><li><a href="img/materiales/thumb1_1024.jpg" class="html5lightbox" title="Prueba Thumbnail" data-group="set1"><img src="img/materiales/thumb1.jpg" width="48" height="49" /></a></li><li><a href="img/materiales/thumb1_1024.jpg" class="html5lightbox" title="Prueba Thumbnail" data-group="set1"><img src="img/materiales/thumb1.jpg" width="48" height="49" /></a></li></ul></div>');
+
 
       // fade in slider_content
       $(".slider_content").fadeIn();
