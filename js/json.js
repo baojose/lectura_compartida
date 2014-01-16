@@ -2,9 +2,9 @@ var libros=
 {
   "libro1": {
     "publicado":"si",
-    "autor" : "Arturo Pérez-Reverte",
-    "titulo": "El Francotirador Paciente",
-    "descripcion": "La ciudad dddd es un campo de batalla. Un artista callejero lanza desafíos como si fueran bombas. El único arte posible es un ajuste de cuentas.La ciudad dddd es un campo de batalla. Un artista callejero lanza desafíos como si fueran bombas. El único arte posible es un ajuste de cuentas.La ciudad dddd es un campo de batalla. Un artista callejero lanza desafíos como si fueran bombas. El único arte posible es un ajuste de cuentas.",
+    "autor" : "Ray Loriga",
+    "titulo": "Za Za, Emperador de Ibiza",
+    "descripcion": "Un ex narcotraficante retirado de poca monta que se dedica a la vida contemplativa en Ibiza y cuyas únicas ocupaciones son pasear por la isla y leer la prensa deportiva, se verá metido en una extravagante trama de mafias que lo confunden con el creador de una nueva y poderosísima droga, lo que provocará una espiral de acontecimientos delirantes.",
     "link_ebook": "http://link_ebook_libro1.com",
     "link_comprar": "http://link_comprar_libro1.com",
     "path_img": "img/book1g.png",
@@ -25,9 +25,9 @@ var libros=
   },
   "libro2": {
     "publicado":"si",
-    "autor" : "222222-Reverte",
-    "titulo": "Ad consequat mollit",
-    "descripcion": "2MMMMMM222S Lorem ipsum Ad consequat mollit proident veniam Ut quis aute sed sit ullamco commodo occaecat eiusmod commodo in exercitation.",
+    "autor" : "Julio Cortázar, Carles Álvarez Garriga, Aurora Bernárdez",
+    "titulo": "Cortázar de la A a la Z",
+    "descripcion": "Con motivo del centenario de su nacimiento, la Internacional Cronopia reclamaba ya con demasiada insistencia una nueva aproximación al escritor y al hombre.",
     "link_ebook": "http://link_ebook_libro2.com",
     "link_comprar": "http://link_comprar_libro2.com",
     "path_img": "img/book2g.png",

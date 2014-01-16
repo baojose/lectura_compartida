@@ -1,8 +1,8 @@
 // tamaño de libros shelf
 var shelf_tamanyo_widht         = 84;
 var shelf_tamanyo_height        = 102;
-var shelf_tamanyo_widht_grande  = 100;
-var shelf_tamanyo_height_grande = 140;
+var shelf_tamanyo_widht_grande  = 95;
+var shelf_tamanyo_height_grande = 116;
 
 
 var libro_landing = 'libro1'; // se podria hacer una funcion q lo buscase del json.js
