@@ -106,7 +106,7 @@ a:active {
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
-	border:14px solid grey;
+	border:14px solid #fdfdfd;
 	float:left;
 }
 
@@ -115,6 +115,14 @@ header{
 	width:782px;
 	text-align:center;
 	padding:50px 0 0 0;
+}
+
+header a:hover{
+	transition: all 0.25s ease 0s;
+}
+
+header a:hover{
+	opacity:0.6;
 }
 
 header p{
@@ -359,8 +367,6 @@ header p{
 }
 
 
-
-
 /* BOXES */
 
 #boxes_container{
@@ -371,30 +377,33 @@ header p{
 }
 
 .box_1{
-	height:183px;
+	height:193px;
 	width:237px;
 	margin: 9px  6px;
 	display:block;
 	float:left;
 	background-color:#4a4a4a;
+	padding-bottom:5px;
 }
 
 .box_2{
-	height:183px;
+	height:193px;
 	width:237px;
 	margin: 9px  6px;
 	display:block;
 	float:left;
 	background-color:#757575;
+	padding-bottom:5px;
 }
 
 .box_3{
-	height:183px;
+	height:193px;
 	width:237px;
 	margin: 9px  6px;
 	display:block;
 	float:left;
 	background-color:#4a4a4a;
+	padding-bottom:5px;
 }
 
 .box_1 img, .box_2 img, .box_3 img{
@@ -418,6 +427,7 @@ header p{
 	color:#ffffff;
 	font-size:12px;
 	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+	line-height:14px;
 	padding:10px;
 }
 
@@ -426,6 +436,7 @@ header p{
 	color:#ffffff;
 	font-size:12px;
 	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+	line-height:14px;
 	padding:10px;
 	text-align:center;
 }
@@ -433,6 +444,7 @@ header p{
 #boxes_container .box_3 p{
 	font-family:'adobegaramondproregularRg', Georgia, "Times New Roman", Times, serif;
 	color:#ffffff;
+	line-height:14px;
 	font-size:12px;
 	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
 	padding:10px;
