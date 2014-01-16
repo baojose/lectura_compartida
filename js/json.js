@@ -36,15 +36,14 @@ var libros=
 
     ],
 
-
   },
   "libro3": {
     "path_img": "img/book3g.png",
     "autor" : "Julio Cortázar, Carles Álvarez Garriga, Aurora Bernárdez",
     "titulo": "Cortázar de la A a la Z",
     "descripcion": "Con motivo del centenario de su nacimimasiada insistencia una nueva aproximación al escritor y al hombre.",
-    "link_ebook": "http://link_ebook_libro2.com",
-    "link_comprar": "http://link_comprar_libro2.com",
+    "link_ebook": "http://link_ebook_libro3.com",
+    "link_comprar": "http://link_comprar_libro3.com",
     "cajas":[
       {"caja_roja":{"texto":"«2222222A", "link_ver_mas":"http://link_linkver_mas_libr24t4t2t4co11.com"}},
       {"caja_azul":{"texto":"«Abrir  2.", "link_ver_mas":"http://link_linkver_mas_libr23fd32do1.com2f4g2"}},
