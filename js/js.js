@@ -115,14 +115,14 @@ function cargarDatosPrincipales(id){
         $('#autor').html(libros[id].autor);
         $('#descripcion').html(libros[id].descripcion);
         $('#link_ebook').html('<a href="'+libros[id].link_ebook+'"><img src="img/button.jpg" width="107" height="37" alt="Cómpralo para eBook" /></a>');
-        $('#link_comprar').html('<a class="button" href="'+libros[id].link_comprar+'">Comprar</a>');
+        $('#link_comprar').html('<a class="button" href="'+libros[id].link_comprar+'">Club de Lectura</a>');
         
         ///////////
         // CAJAS //
         ///////////     
         // Posiciones en json => X en numero cajas[X]
           $('#caja_roja').html(libros[id].cajas[0].caja_roja.texto+'<a class="button_box1" href="'+libros[id].cajas[0].caja_roja.link_ver_mas+'" style="">Ver más</a>');
-          $('#caja_azul').html(libros[id].cajas[1].caja_azul.texto+'<a class="button_box2" href="'+libros[id].cajas[1].caja_azul.link_ver_mas+'" style="">Ver más</a>');
+          $('#caja_azul').html(libros[id].cajas[1].caja_azul.texto+'<img style="margin:0 auto 0 auto" src="img/book_c1.jpg" width="87" height="110" /><a class="button_box2" href="'+libros[id].cajas[1].caja_azul.link_ver_mas+'" style="">Comprar</a>');
           $('#caja_lima').html(libros[id].cajas[2].caja_lima.texto+'<a class="button_box3" href="'+libros[id].cajas[2].caja_lima.link_ver_mas+'" style="">Ver más</a>');
           $('#caja_rosa').html(libros[id].cajas[3].caja_rosa.texto+'<a class="button_box1" href="'+libros[id].cajas[3].caja_rosa.link_ver_mas+'" style="">Ver más</a>');
           $('#caja_verde').html(libros[id].cajas[4].caja_verde.texto+'<a class="button_box2" href="'+libros[id].cajas[4].caja_verde.link_ver_mas+'" style="">Ver más</a>');

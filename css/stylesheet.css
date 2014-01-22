@@ -130,10 +130,10 @@ header p{
 	width:782px;
 	text-align:center;
 	font-family:'adobegaramondproregularRg', Georgia, "Times New Roman", Times, serif;
-	color:#626262;
+	color:#cb3c50;
 	font-size:73px;
 	padding:50px 0 0 0;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+	text-shadow: 0 0 1px #993a47;
 }
 
 #bar{
@@ -164,7 +164,7 @@ header p{
 #book_content{
 	height:395px;
 	width:356px;
-	margin:50px 0 0 0;
+	margin:0px 0 0 0;
 	padding:0 0 0 0;
 	float:left;
 	display:block;
@@ -238,7 +238,7 @@ header p{
     color: #626262;
 	float:left;
     display: inline-block;
-    margin: 20px 0 10px 20px;
+    margin: 20px 0 10px 0px;
     padding: 8.5px 16px;
     text-decoration: none;
     transition: all 0.25s ease 0s;
@@ -284,7 +284,7 @@ header p{
     color: #FFF;
 	float:left;
     display: inline-block;
-    margin: 10px 0 0 70px;
+    margin: 10px 0 0 57px;
     padding: 8.5px 16px;
     text-decoration: none;
     transition: all 0.25s ease 0s;
@@ -322,7 +322,7 @@ header p{
 }
 
 #book_content img{
-	margin:20px 0 0 0;
+	margin:20px 0 0 20px;
 	float:left;
 	transition: all 0.25s ease 0s;
 }
@@ -456,7 +456,7 @@ header p{
 	width:218px;
 	display:block;
 	float:right;
-	margin:20px -3px 0 0;
+	margin:30px -3px 0 0;
 }
 
 .catalog ul li{
@@ -550,7 +550,7 @@ header p{
   content: "+";
   font-size: 25px;
   position: absolute;
-  margin: 0px 0 0 -530px;
+  margin: 0px 0 0 -535px;
 }
 
 .h.open {
@@ -573,7 +573,7 @@ header p{
 	width:510px;
 	margin:0 auto;
 	text-align:left;
-	font-family:'adobe_garamond_proitalic', Georgia, "Times New Roman", Times, serif;
+	font-family:'adobegaramondproregularRg', Georgia, "Times New Roman", Times, serif;
 	color:#626262;
 	font-size:14px;
 	line-height:18px;
