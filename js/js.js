@@ -205,4 +205,4 @@ function dummy_listaOrdenadaLibros(){  // no se usa
         console.log("i"+i);
       }
 }
-console.log(libros);
+// console.log(libros);

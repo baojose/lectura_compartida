@@ -36,8 +36,8 @@ function AlternarVisibilidadObj(obj){
         }
 }
 function dummyCambioLigthboxDelLibro1AlLibro2(actual_libro,nuevo_libro){
-
-        // InvisibleEsteId("actual_libro");
-        // InvisibleEsteId("nuevo_libro");
+        console.log("XXXXXXXXXXXXX dummyCambioLigthboxDelLibro1AlLibro2 actual_libro=["+actual_libro+"] nuevo_libro["+nuevo_libro+"]");
+        InvisibleEsteId("lb"+actual_libro);
+        VisibleEsteId("lb"+nuevo_libro);
         // VisibleEsteId("lilibro2");
 }
