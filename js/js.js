@@ -70,6 +70,13 @@ $(document).ready(function() {
 
     cargarDatosPrincipales(dummy_siguinteLibro());
   });
+
+  //////////////////////////
+  // CONTROL DEL LIGHTBOX //
+  //////////////////////////
+  // $().click
+
+
   ////////////////////////////////////
   // DEBUG dentro de document.ready //
   ////////////////////////////////////
@@ -105,9 +112,12 @@ function cargarDatosPrincipales(id){
 
       // fade out slider_content       // cambiar el contenido (y fade in) dentro de la funcion fadeOut consigue que se haga todo en orden correcto
 
-      // $(".slider_content").fadeOut();
+      // EFECTOS PARA de  shelf
       decrementarImagen(actual_libro);
       incrementarImagen(id);
+
+      // CAJA LIGTHBOX (caja naranja)
+      dummyCambioLigthboxDelLibro1AlLibro2(actual_libro,id);
 
       $('.slider_content').fadeOut("slow", function(){
         $('#path_img').html('<img src="'+libros[id].path_img+'">');
