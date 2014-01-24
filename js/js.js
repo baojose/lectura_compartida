@@ -113,8 +113,9 @@ function cargarDatosPrincipales(id){
         $('#path_img').html('<img src="'+libros[id].path_img+'">');
         $('#titulo').html(libros[id].titulo);
         $('#autor').html(libros[id].autor);
+		$('#slogan').html(libros[id].slogan);
         $('#descripcion').html(libros[id].descripcion);
-        $('#link_ebook').html('<a href="'+libros[id].link_ebook+'"><img src="img/button.jpg" width="107" height="37" alt="Cómpralo para eBook" /></a>');
+        //$('#link_ebook').html('<a href="'+libros[id].link_ebook+'"><img src="img/button.jpg" width="107" height="37" alt="Cómpralo para eBook" /></a>');//
         $('#link_comprar').html('<a class="button" href="'+libros[id].link_comprar+'">Club de Lectura</a>');
         
         ///////////
