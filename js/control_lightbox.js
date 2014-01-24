@@ -41,3 +41,15 @@ function dummyCambioLigthboxDelLibro1AlLibro2(actual_libro,nuevo_libro){
         VisibleEsteId("lb"+nuevo_libro);
         // VisibleEsteId("lilibro2");
 }
+
+function hacerInvisbleImgPequeniaLibgBox(){
+        // recorro el array de libros y hago invistble todos los id = ·lblibro*
+        for (index = 0; index < listaOrdenadaLibros.length; ++index) {
+                console.log("lb"+listaOrdenadaLibros[index]);
+                InvisibleEsteId("lb"+listaOrdenadaLibros[index]);
+
+
+        }
+              
+
+}

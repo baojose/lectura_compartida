@@ -83,7 +83,7 @@ $(document).ready(function() {
 
     // Para ver por consola valor del actual_libro al clicar cualquier parte d la pagina
     $("html").click(function(){
-      console.log("debug 1d12d2r actual_libro  ["+actual_libro+"] listaOrdenadaLibros_ultimo ["+listaOrdenadaLibros_ultimo+"] listaOrdenadaLibros_primero ["+listaOrdenadaLibros_primero+"]");
+      console.log("debug 1d12d2r actual_libro  ["+actual_libro+"]");
 
     });
     ///////////////////////////// PARSEAR json.js
@@ -111,19 +111,19 @@ function cargarDatosPrincipales(id){
   console.log("cargarDatosPrincipales id recibida=["+id+"]");
 
       // fade out slider_content       // cambiar el contenido (y fade in) dentro de la funcion fadeOut consigue que se haga todo en orden correcto
-
       // EFECTOS PARA de  shelf
       decrementarImagen(actual_libro);
       incrementarImagen(id);
 
       // CAJA LIGTHBOX (caja naranja)
+      hacerInvisbleImgPequeniaLibgBox();
       dummyCambioLigthboxDelLibro1AlLibro2(actual_libro,id);
 
       $('.slider_content').fadeOut("slow", function(){
         $('#path_img').html('<img src="'+libros[id].path_img+'">');
         $('#titulo').html(libros[id].titulo);
         $('#autor').html(libros[id].autor);
-		$('#slogan').html(libros[id].slogan);
+    $('#slogan').html(libros[id].slogan);
         $('#descripcion').html(libros[id].descripcion);
         //$('#link_ebook').html('<a href="'+libros[id].link_ebook+'"><img src="img/button.jpg" width="107" height="37" alt="Cómpralo para eBook" /></a>');//
         $('#link_comprar').html('<a class="button" href="'+libros[id].link_comprar+'">Club de Lectura</a>');
@@ -183,7 +183,7 @@ function dummy_siguinteLibro(){
 
 function dummy_anteriorLibro(){
   nuevo_libro="";
-  // es ultimo libro?
+  // es ultimo libro de la listaOrdenadaLibros?
   if(actual_libro == listaOrdenadaLibros_primero){
     nuevo_libro = listaOrdenadaLibros_ultimo;
   }
