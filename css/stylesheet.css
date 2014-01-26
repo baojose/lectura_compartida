@@ -621,3 +621,8 @@ header p{
 	padding:10px 0 0 0;
 	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
 }
+
+/*DEBUG*/
+#footer_banderas_wrapper{
+	background-color: pink;
+}

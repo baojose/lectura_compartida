@@ -79,6 +79,18 @@ $(document).ready(function() {
   /////////////////////////
   // CONTROL  del FOOTER //
   /////////////////////////
+  //
+  //
+   $("#footer_banderas_wrapper").mouseout(function (){
+    $( "#banderas_facebook" ).slideUp( "slow" );
+    $( "#banderas_twitter" ).slideUp( "slow" );
+    $( "#banderas_spotify" ).slideUp( "slow" );
+    
+
+   });
+
+  //
+  //
   $("#footer_icono_facebook").mouseover(function() {
     // $( "#log" ).append( "<div>Handler for .mouseover() called.</div>" );
     $( "#banderas_twitter" ).hide();
