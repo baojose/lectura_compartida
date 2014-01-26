@@ -81,7 +81,7 @@ $(document).ready(function() {
   /////////////////////////
   $("#footer_icono_facebook").mouseover(function() {
       // $( "#log" ).append( "<div>Handler for .mouseover() called.</div>" );
-      $( "#banderas_facebook" ).slideDown( "fast" );
+      $( "#banderas_facebook" ).slideDown( "slow" );
       // console.log("a funcionado");
       }    );
 

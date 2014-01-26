@@ -532,7 +532,28 @@ header p{
 	opacity:1;
 }
 
-#footer #icons li:active{
+#footer #banderas{
+	display:block;
+	width:730px;
+	height:60px;
+	margin: 20px 26px 0 0;
+	float:right;              
+}
+
+#footer #banderas li{
+	height:38px;
+	width:30px;
+	float:left;
+	padding:5px 11px;
+	transition: all 0.25s ease 0s;
+	opacity:0.6;
+}
+
+#footer #banderas li:hover{
+	opacity:1;
+}
+
+#footer #banderas li:active{
 	margin:1px 1px;
 }
 
