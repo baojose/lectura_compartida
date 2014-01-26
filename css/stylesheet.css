@@ -258,7 +258,7 @@ header p{
     color: #626262;
 	float:left;
     display: inline-block;
-    margin: 20px 0 10px 0px;
+    margin: 0 0 10px 0px;
     padding: 10.5px 16px;
     text-decoration: none;
     transition: all 0.25s ease 0s;
@@ -355,7 +355,7 @@ header p{
 	width:735px;
 	height:25px;
 	background:url(../img/shelf.png) no-repeat;
-	margin: 50px 10px 40px 0;
+	margin: 70px 10px 40px 0;
 	float:right;
 	display:block; 
 }
@@ -468,7 +468,7 @@ header p{
 	font-size:12px;
 	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
 	padding:10px;
-	text-align:right;
+	text-align:center;
 }
 
 .catalog{
@@ -476,7 +476,7 @@ header p{
 	width:218px;
 	display:block;
 	float:right;
-	margin:15px -3px 0 0;
+	margin:15px 0 0 0;
 }
 
 .catalog ul li{
@@ -595,7 +595,7 @@ header p{
 	text-align:left;
 	font-family:'adobegaramondproregularRg', Georgia, "Times New Roman", Times, serif;
 	color:#626262;
-	font-size:14px;
+	font-size:16px;
 	line-height:18px;
 	padding:10px 0 0 0;
 	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);

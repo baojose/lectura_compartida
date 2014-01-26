@@ -3,9 +3,9 @@ var libros=
   "libro1": {
     "path_img": "img/book2g.png",
     "autor" : "Julio Cortázar, Carles Álvarez Garriga, Aurora Bernárdez",
-	"slogan" : "1",
+	"slogan" : "La biografía visual y autocomentada de Julio Cortázar en el año de su centenario",
     "titulo": "Cortázar de la A a la Z",
-    "descripcion": "La biografía visual y autocomentada de Julio Cortázar en el año de su centenario. Abrir las puertas para salir a jugar» es lo que propone este álbum-almanaque que constituye una nueva aproximación al escritor y al hombre. Un libro que es a su manera muchos libros y que puede leerse sobre todo de dos modos: en la forma corriente (de la A a la Z) o de manera salteada, siguiendo la espiral de la curiosidad y del AZar.",
+    "descripcion": "Abrir las puertas para salir a jugar» es lo que propone este álbum-almanaque que constituye una nueva aproximación al escritor y al hombre. Un libro que es a su manera muchos libros y que puede leerse sobre todo de dos modos: en la forma corriente (de la A a la Z) o de manera salteada, siguiendo la espiral de la curiosidad y del AZar.",
     //"link_ebook": "http://link_ebook_libro1.com",
     "link_comprar": "https://www.facebook.com/groups/clubdelecturacortazar/",
     "cajas":[
