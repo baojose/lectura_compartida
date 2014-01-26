@@ -76,6 +76,16 @@ $(document).ready(function() {
   //////////////////////////
   // $().click
 
+  /////////////////////////
+  // CONTROL  del FOOTER //
+  /////////////////////////
+  $("#footer_icono_facebook").mouseover(function() {
+      // $( "#log" ).append( "<div>Handler for .mouseover() called.</div>" );
+      $( "#banderas_facebook" ).slideDown( "fast" );
+      // console.log("a funcionado");
+      }    );
+
+
 
   ////////////////////////////////////
   // DEBUG dentro de document.ready //
