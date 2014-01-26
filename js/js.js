@@ -81,7 +81,7 @@ $(document).ready(function() {
   /////////////////////////
   //
   //
-   $("#footer_banderas_wrapper").mouseout(function (){
+   $("#boxes_container").mouseover(function (){
     $( "#banderas_facebook" ).slideUp( "slow" );
     $( "#banderas_twitter" ).slideUp( "slow" );
     $( "#banderas_spotify" ).slideUp( "slow" );
