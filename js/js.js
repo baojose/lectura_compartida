@@ -80,11 +80,26 @@ $(document).ready(function() {
   // CONTROL  del FOOTER //
   /////////////////////////
   $("#footer_icono_facebook").mouseover(function() {
-      // $( "#log" ).append( "<div>Handler for .mouseover() called.</div>" );
-      $( "#banderas_facebook" ).slideDown( "slow" );
-      // console.log("a funcionado");
-      }    );
-
+    // $( "#log" ).append( "<div>Handler for .mouseover() called.</div>" );
+    $( "#banderas_twitter" ).hide();
+    $( "#banderas_spotify" ).hide();
+    // console.log("a funcionado");
+    $( "#banderas_facebook" ).slideDown( "slow" );
+  });
+  $("#footer_icono_twitter").mouseover(function() {
+    // $( "#log" ).append( "<div>Handler for .mouseover() called.</div>" );
+    $( "#banderas_facebook" ).hide();
+    $( "#banderas_spotify" ).hide();
+    // console.log("a funcionado");
+    $( "#banderas_twitter" ).slideDown( "slow" );
+  });
+  $("#footer_icono_spotify").mouseover(function() {
+    // $( "#log" ).append( "<div>Handler for .mouseover() called.</div>" );
+    $( "#banderas_facebook" ).hide();
+    $( "#banderas_twitter" ).hide();
+    // console.log("a funcionado");
+    $( "#banderas_spotify" ).slideDown( "slow" );
+  });
 
 
   ////////////////////////////////////
