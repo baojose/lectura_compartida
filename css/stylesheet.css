@@ -377,7 +377,7 @@ header p{
 	cursor:pointer;
 }
 
-#shelf ul li:hover{
+#shelf ul li.tooltip:hover{
 	transform: scale(1.1);
 	-o-transform: scale(1.1);
 	-ms-transform: scale(1.1);
