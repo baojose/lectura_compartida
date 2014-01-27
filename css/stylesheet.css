@@ -386,6 +386,9 @@ header p{
 	padding:0 0 0 5px;
 }
 
+.futuro_libro4{
+}
+
 
 /* BOXES */
 
@@ -526,6 +529,7 @@ header p{
 	padding:3px;
 	opacity:0.5;
 	transition: all 0.25s ease 0s;
+	cursor:pointer;
 }
 
 #footer #icons li:hover{
@@ -534,27 +538,51 @@ header p{
 
 #footer #banderas{
 	display:block;
-	width:730px;
+	width:810px;
 	height:60px;
-	margin: 20px 26px 0 0;
+	margin:12px 0 0 100px;
 	float:right;              
 }
 
-#footer #banderas li{
-	height:38px;
-	width:30px;
-	float:left;
-	padding:5px 11px;
-	transition: all 0.25s ease 0s;
-	opacity:0.6;
+#footer #banderas_facebook, #banderas_twitter, #banderas_spotify{
+	display:block;
+	margin:0 auto;
+	background:#000;
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC; 	              
 }
 
-#footer #banderas li:hover{
+#footer #banderas_facebook li, #banderas_twitter li, #banderas_spotify li{
+	height:38px;
+	width:30px;
+	float:right;
+	padding:17px 25px 0 0;
+	transition: all 0.25s ease 0s;
+	opacity:0.6;
+	text-align:right;
+}
+
+#footer #banderas_facebook li:hover, #banderas_twitter li:hover, #banderas_spotify li:hover{
 	opacity:1;
 }
 
-#footer #banderas li:active{
+#footer #banderas_facebook li:active, #banderas_twitter li:active, #banderas_spotify li:active{
 	margin:1px 1px;
+}
+
+#footer #banderas_facebook{
+	height:60px;
+	margin:0 0 0 28px;     
+}
+
+#footer #banderas_twitter{
+	height:60px;
+	margin:0 0 0 28px;     
+}
+
+#footer #banderas_spotify{
+	height:60px;
+	margin:0 0 0 28px;     
 }
 
 
@@ -620,9 +648,4 @@ header p{
 	line-height:18px;
 	padding:10px 0 0 0;
 	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
-}
-
-/*DEBUG*/
-#footer_banderas_wrapper{
-	background-color: pink;
 }
