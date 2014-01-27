@@ -40,7 +40,7 @@ $(document).ready(function() {
   ///////////////////////////////////////////////////////////////////////////////////////////
   // Detectar cual libro del shelf ha sido clicado, cambiar el contenido de slider_content //
   ///////////////////////////////////////////////////////////////////////////////////////////
-  $("#shelf img").click(function() {
+  $("#shelf .tooltip img").click(function() {
 
     // detectar cual id ha sido clicado
     var id = $(this).attr('id');
