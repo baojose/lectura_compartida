@@ -16,12 +16,9 @@
  */
 
 require 'src/facebook.php';
+require 'php/nogit.php';
 
-// Create our Application instance (replace this with your appId and secret).
-$facebook = new Facebook(array(
-  'appId'  => '827415657273366',
-  'secret' => 'ad9da0f09316adc7c3e905bf1d881bdc',
-));
+
 
 // Get User ID
 $user = $facebook->getUser();
@@ -52,9 +49,14 @@ if ($user) {
   );
 }
 
+// This call will always work since we are fetching public data.
+$naitik = $facebook->api('/naitik');
+
 ?>
-<!doctype html>
-<html xmlns:fb="http://www.facebook.com/2008/fbml">
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- <!doctype html>
+<html xmlns:fb="http://www.facebook.com/2008/fbml"> -->
   <head>
     <title>php-sdk</title>
     <style>
@@ -101,7 +103,7 @@ if ($user) {
         Login using OAuth 2.0 handled by the PHP SDK:
         <a href="<?php echo $loginUrl; ?>">Login with Facebook</a>
       </div>
-      <strong><em>You are not Connectedzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz.</em></strong>
+      <strong><em>You are not Connected.</em></strong>
 
     <h3>PHP Session</h3>
     <pre><?php print_r($_SESSION); ?></pre>
@@ -111,8 +113,7 @@ if ($user) {
 <!--
  https://www.webuzz.es/aplicaciones/skeetching/php/ 
  -->
- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Club de Lectura Alfaguara</title>
