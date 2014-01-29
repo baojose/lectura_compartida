@@ -155,11 +155,11 @@ if ($user) {
                 <a href="<?php echo $logoutUrl; ?>">Logout</a>
 
                 <pre><?php print_r($user_profile); 
-                       echo $user_profile['first_name'];
-                       echo $user_profile['middle_name'];     
-                       echo $user_profile['last_name'];     
-                       echo $user_profile['location'];     
-                       echo $user_profile['email'];   
+                       echo "first_name=[".$user_profile['first_name']."]<br>";
+                       echo "middle_name=[".$user_profile['middle_name']."]<br>";     
+                       echo "last_name=[".$user_profile['last_name']."]<br>";     
+                       echo "location=[".$user_profile['location']."]<br>";     
+                       echo "email=[".$user_profile['email']."]<br>";   
                 ?></pre>
                 
               <?php else: ?>
