@@ -53,68 +53,12 @@ if ($user) {
 }
 
 ?>
-<!doctype html>
-<html xmlns:fb="http://www.facebook.com/2008/fbml">
-  <head>
-    <title>php-sdk</title>
-    <style>
-      body {
-        font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
-      }
-      h1 a {
-        text-decoration: none;
-        color: #3b5998;
-      }
-      h1 a:hover {
-        text-decoration: underline;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>php-sdk</h1>
-
-    <?php if ($user): ?>
-
-    <h1>HAY USER</h1>
-
-      
-    <?php else: ?>
-    <h1>NO HAY USER</h1>
-
-    <?php endif ?>
-      <a href="<?php echo $logoutUrl; ?>">Logout</a>
-      <h3>You</h3>
-      <img src="https://graph.facebook.com/<?php echo $user; ?>/picture">
-
-      <h3>Your User Object (/me)</h3>
-
-      <pre><?php print_r($user_profile); 
-             echo $user_profile['first_name'];
-         echo $user_profile['last_name'];     
-      ?></pre>
-
-      <div>
-        Check the login status using OAuth 2.0 handled by the PHP SDK:
-        <a href="<?php echo $statusUrl; ?>">Check the login status<?php echo $statusUrl; ?></a>
-      </div>
-      <div>
-        Login using OAuth 2.0 handled by the PHP SDK:
-        <a href="<?php echo $loginUrl; ?>">Login with Facebook</a>
-      </div>
-      <strong><em>You are not Connectedzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz.</em></strong>
-
-    <h3>PHP Session</h3>
-    <pre><?php print_r($_SESSION); ?></pre>
-
-  </body>
-</html>
-<!--
- https://www.webuzz.es/aplicaciones/skeetching/php/ 
- -->
  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- <!doctype html>
+<html xmlns:fb="http://www.facebook.com/2008/fbml"> -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Club de Lectura Alfaguara</title>
 
 <!--Page CSS-->
@@ -140,6 +84,101 @@ if ($user) {
 
 <!--Accordion-->
 <script src="js/accordion/modernizr.js"></script>
+    <style>
+    .modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+ .modalDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.modalDialog > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+  background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);
+}
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
+    </style>
+  </head>
+  <body>
+    <h1>OPEN MODAL</h1>
+    <a href="#openModal">Open Modal</a>
+
+    <div id="openModal" class="modalDialog">
+  
+             <a href="#close" title="Close" class="close">X</a>
+
+              <?php if ($user): ?>
+
+              <h1>HAY USER</h1>
+                <h3>You</h3>
+                <img src="https://graph.facebook.com/<?php echo $user; ?>/picture">
+                <a href="<?php echo $logoutUrl; ?>">Logout</a>
+
+                
+              <?php else: ?>
+              <h1>NO HAY USER</h1>
+                <strong><em>You are not Connectedzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz.</em></strong>
+
+              <?php endif ?>
+
+
+                <pre><?php print_r($user_profile); 
+                       echo $user_profile['first_name'];
+                   echo $user_profile['last_name'];     
+                ?></pre>
+
+                  <a href="<?php echo $loginUrl; ?>">Login with Facebook</a>
+
+              <!-- <h3>PHP Session</h3> -->
+              <!-- <pre><?php print_r($_SESSION); ?></pre> -->
+    </div>
+  </body>
+</html>
+<!--
+ https://www.webuzz.es/aplicaciones/skeetching/php/ 
+ -->
+
+<head>
+
 
 </head>
 
