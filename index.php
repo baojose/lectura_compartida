@@ -139,9 +139,10 @@ if ($user) {
     </style>
   </head>
   <body>
-    <h1>OPEN MODAL</h1>
+ <!-- 
+    Asi se "instancia" openmodal con un href con #
     <a href="#openModal">Open Modal</a>
-
+ -->
     <div id="openModal" class="modalDialog">
         <div>
           
@@ -168,26 +169,16 @@ if ($user) {
                   <a href="<?php echo $loginUrl; ?>">Login with Facebook</a>
 
               <?php endif ?>
-
-
+              <!-- 
                <h3>PHP Session</h3> 
                <pre><?php print_r($_SESSION); ?></pre>
-
+              -->
 
         </div>
     </div>
-  </body>
-</html>
 <!--
  https://www.webuzz.es/aplicaciones/skeetching/php/ 
  -->
-
-<head>
-
-
-</head>
-
-<body>
 
 <!--Facebook Size resizer-->
 <div id="fb-root"></div>
