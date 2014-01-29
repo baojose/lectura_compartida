@@ -143,7 +143,8 @@ if ($user) {
     <a href="#openModal">Open Modal</a>
 
     <div id="openModal" class="modalDialog">
-  
+        <div>
+          
              <a href="#close" title="Close" class="close">X</a>
 
               <?php if ($user): ?>
@@ -153,23 +154,27 @@ if ($user) {
                 <img src="https://graph.facebook.com/<?php echo $user; ?>/picture">
                 <a href="<?php echo $logoutUrl; ?>">Logout</a>
 
+                <pre><?php print_r($user_profile); 
+                       echo $user_profile['first_name'];
+                       echo $user_profile['middle_name'];     
+                       echo $user_profile['last_name'];     
+                       echo $user_profile['location'];     
+                       echo $user_profile['email'];   
+                ?></pre>
                 
               <?php else: ?>
               <h1>NO HAY USER</h1>
                 <strong><em>You are not Connectedzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz.</em></strong>
+                  <a href="<?php echo $loginUrl; ?>">Login with Facebook</a>
 
               <?php endif ?>
 
 
-                <pre><?php print_r($user_profile); 
-                       echo $user_profile['first_name'];
-                   echo $user_profile['last_name'];     
-                ?></pre>
+               <h3>PHP Session</h3> 
+               <pre><?php print_r($_SESSION); ?></pre>
 
-                  <a href="<?php echo $loginUrl; ?>">Login with Facebook</a>
 
-              <!-- <h3>PHP Session</h3> -->
-              <!-- <pre><?php print_r($_SESSION); ?></pre> -->
+        </div>
     </div>
   </body>
 </html>
