@@ -7,7 +7,8 @@
 
 define( 'PAYPAL_ID' , '' ); // Put donation ID here to disable the bottom backlink
 
-define( 'PHPFMG_TO' , 'baollantines@yahoo.es' );
+// define( 'PHPFMG_TO' , 'baollantines@yahoo.es' );
+define( 'PHPFMG_TO' , 'corneliusinlove@gmail.com' );
 define( 'PHPFMG_REDIRECT', 'http://www.link.com' ); 
 
 define( 'PHPFMG_ID' , '20140129-13b6' ); 
@@ -2020,11 +2021,11 @@ function phpfmg_footer( $formOnly = false ){
 ?>
 
 	<br><br>
-	
+<!-- 	
 	<div style="padding-left:10px; font-size:11px;color:#cccccc;text-decoration:none;">
 		:: <a href="http://phpfmg.sourceforge.net" target="_blank" title="Free Mailform Maker: Create read-to-use Web Forms in a flash" style="color:#cccccc;text-decoration:none;font-weight:bold;">PHP FormMail Generator</a> ::
 	</div>
-
+ -->
 <?php
 };// if
 
