@@ -20,10 +20,11 @@ function phpfmg_form( $sErr = false ){
 
 ?>
 
+
 <div id="openModal" class="modalDialog">
-    
 
     <div>
+        <a href="#close" title="Close" class="close">X</a>
 
             <div id='frmFormMailContainer'>
 
@@ -131,13 +132,35 @@ function phpfmg_form( $sErr = false ){
 function phpfmg_form_css(){
     $formOnly = isset($GLOBALS['formOnly']) && true === $GLOBALS['formOnly'];
 ?>
+<style type='text/css'>
+<?php 
+if( !$formOnly ){
+    echo"
+body{
+    margin-left: 18px;
+    margin-top: 18px;
+}
 
+body{
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    font-size : 13px;
+    color : #474747;
+    background-color: transparent;
+}
 
+select, option{
+    font-size:13px;
+}
+";
+}; // if
+?>
 
 
 <?php phpfmg_text_align();?>    
 
 
+
+</style>
 
 <?php
 }
