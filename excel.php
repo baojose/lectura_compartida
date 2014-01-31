@@ -9,7 +9,7 @@ $nombre = quitarPyC($_POST['field_0'] )			;
 $nombre = quitarPyC($_POST['field_1'] )			;	
 $nombre = quitarPyC($_POST['field_2'] )			;	
 $nombre = quitarPyC($_POST['field_355'] )			;	
-	echo "<script>confirm('pasas aunque POST no exista');</script>"; // funciona!
+	// echo "<script>confirm('pasas aunque POST no exista');</script>"; // funciona!
 	// ABRIR EL FICHERO
 	// abro fichero para concatenar
 	$text=$nombre.";";
@@ -18,8 +18,9 @@ $nombre = quitarPyC($_POST['field_355'] )			;
 
 if(!file_exists($path_csv.$nombre_output))
   {
-
-	echo "<script>confirm('file no existe');</script>"; // funciona!
+  	// mail(); <<<<< no se puede.
+  	// escribir(PORSIACA.txt);
+	echo "<script>confirm('HA ocurrido error, NO ESTAS DADO DE ALTA');</script>"; // funciona!
   	die("File not found");
   }
 else
