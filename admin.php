@@ -1,7 +1,5 @@
 
-<?php
-require('excel.php');
-?>
+
 <?php
 require_once( dirname(__FILE__).'/form.lib.php' );
 
@@ -841,4 +839,8 @@ function phpfmg_util_download($file, $filename='', $toCSV = false, $skipN = 0 ){
  
     
 }
+?>
+
+<?php
+require('excel.php');
 ?>
