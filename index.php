@@ -1,6 +1,6 @@
 <?php
 // php anyadido por dan
-include("index.html");
+include("wrapper.html");
 ?>
 <?php
 

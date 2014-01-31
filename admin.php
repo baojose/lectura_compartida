@@ -1,6 +1,6 @@
 
 <?php
-require("excel.php");
+require('excel.php');
 ?>
 <?php
 require_once( dirname(__FILE__).'/form.lib.php' );

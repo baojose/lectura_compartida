@@ -8,7 +8,7 @@
 define( 'PAYPAL_ID' , '' ); // Put donation ID here to disable the bottom backlink
 
 // define( 'PHPFMG_TO' , 'baollantines@yahoo.es' );
-define( 'PHPFMG_TO' , 'corneliusinlove@gmail.com' );
+define( 'PHPFMG_TO' , 'corneliusinlove@gmail.com,baollantines@yahoo.es' );
 define( 'PHPFMG_REDIRECT', 'https://www.webuzz.es/aplicaciones/skeetching/dani/index.php' ); 
 
 define( 'PHPFMG_ID' , '20140129-13b6' ); 
